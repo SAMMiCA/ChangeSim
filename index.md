@@ -49,7 +49,7 @@ We present a challenging dataset, ChangeSim, aimed at online scene change detect
 
 ### Citation
 
-If you ise this dataset in your  research, please cite this publication:
+If you use this dataset in your  research, please cite this publication:
 
 ### Download
 
