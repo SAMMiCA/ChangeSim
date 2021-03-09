@@ -41,6 +41,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 # ChangeSim: Towards End-to-End Online Scene Change Detection inIndustrial Indoor Environments
 
+동영상 유튜브
 
 
 ## Abstract
@@ -55,6 +56,8 @@ If you use this dataset in your research, please cite this publication:
 
 The dataset can be downloaded [here](https://github.com/SAMMiCA/ChangeSim) with the description.
 
+
+
 ## Dataset features
 
 ### Diverse and Realistic Indoor Industrial Domain
@@ -65,8 +68,20 @@ The dataset can be downloaded [here](https://github.com/SAMMiCA/ChangeSim) with 
 
 ### Controllable Environmental Variations
 
+
+
+
+
 ## Data acquisition pipeline
+
+
+
+
 
 ## Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+## Acknowledgments
+
+This work was supported by Institute for Information & communications Technology Promotion (IITP) grant fundedby the Korea government (MSIT) (No.2020-0-00440, Devel-opment of artificial intelligence technology that continuouslyimproves itself as the situation changes in the real world).
