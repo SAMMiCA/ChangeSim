@@ -39,7 +39,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 
 
-### ChangeSim: Towards End-to-End Online Scene Change Detection inIndustrial Indoor Environments
+## ChangeSim: Towards End-to-End Online Scene Change Detection inIndustrial Indoor Environments
 
 
 
@@ -53,8 +53,11 @@ If you ise this dataset in your  research, please cite this publication:
 
 ### Download
 
+The dataset is published using OneDrive platform. 
 
+### Dataset features
 
+### Data acquisition pipeline
 
 ### Support or Contact
 
