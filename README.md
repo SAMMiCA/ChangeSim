@@ -24,17 +24,19 @@ ROOT
 |       |
 |       ---- Seq_0                           # Sequece
 |       |      |
-|       |      ---- rgb                      # 0.png - xxxx.png      
-|       |      ---- depth                    # 0.png - xxxx.png
-|       |      ---- semantic_segmentation    # 0.png - xxxx.png     
+|       |      +--- rgb                      # 0.png - xxxx.png      
+|       |      +--- depth                    # 0.png - xxxx.png
+|       |      +--- semantic_segmentation    # 0.png - xxxx.png     
 |       |      ---- raw                   
-|       |      |      |
-|       |      |      ---- rgb      
-|       |      |      ---- depth        
-|       |      |      ---- poses.g2o 
-|       |      |      ---- rtabmap.yaml
+|       |      |     |
+|       |      |     +--- rgb      
+|       |      |     +--- depth        
+|       |      |     ---- poses.g2o 
+|       |      |     ---- rtabmap.yaml
 |       |
 |       +--- Seq_1
 |
 +-- Warehouse_1
-```
+.
+.
++-- Warehouse_N
