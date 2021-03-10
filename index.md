@@ -1,4 +1,4 @@
-# ChangeSim: Towards End-to-End Online Scene Change Detection inIndustrial Indoor Environments
+# ChangeSim: Towards End-to-End Online Scene Change Detection in Industrial Indoor Environments
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/3zMMWg40WZY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
