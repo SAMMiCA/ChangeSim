@@ -3,6 +3,13 @@
 <iframe width="800" height="450" src="https://www.youtube.com/embed/3zMMWg40WZY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+## Recent updates (Under construction)
+- [x] Dataset download links (March 10, 2021)
+- [ ] Documentation for the dataset 
+- [ ] A Tutorial for the visualization of ChangeSim 
+- [ ] A Tutorial for the data collection using Airsim and UE4)
+
+
 ## Abstract
 
 We present a challenging dataset, ChangeSim, aimed at online scene change detection (SCD) and more. The data is collected in photo-realistic simulation environments with the presence of environmental non-targeted variations, such as air turbidity and light condition changes, as well as targeted object changes in industrial indoor environments. By collecting data in simulations, multi-modal sensor data and precise ground truth labels are obtainable such as the RGB image, depth image, semantic segmentation, change segmentation, camera poses, and 3D reconstructions. While the previous online SCD datasets evaluate models given well-aligned image pairs, ChangeSim also provides raw unpaired sequences that present an opportunity to develop an online SCD model in an end-to-end manner, considering both pairing and detection. Experiments show that even the latest pair-based SCD models suffer from the bottleneck of the pairing process, and it gets worse when the environment contains the non-targeted variations. 
