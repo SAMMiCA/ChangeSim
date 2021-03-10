@@ -56,18 +56,16 @@ import numpy as np
 depth = np.load(FILENAME)
 ```
 
-### Optical flow
+### Change segmentation image
 
-The optical flow maps are saved as a float32 numpy array, which is calculated based on the ground truth depth and ground truth camera motion, using [this](https://github.com/huyaoyu/ImageFlow) code. Dynamic objects and occlusions are masked by the mask file, which is a uint8 numpy array. We currently provide the optical flow for the left camera. 
+The segmentation images are saved as a uint8 numpy array.
 
-* Load the optical flow
+
+* Load the segmentation image
 ```
 import numpy as np
-flow = np.load(FILENAME)
+depth = np.load(FILENAME)
 
-# load the mask
-mask = np.load(MASKFILENAME)
-```
 
 ### Pose file
 
