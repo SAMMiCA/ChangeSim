@@ -7,7 +7,6 @@ The color images are stored as 640x480 8-bit RGB images in PNG format.
 import cv2
 img = cv2.imread(FILENAME)
 cv2.imshow('img', img)
-cv2.waitKey(0)
 ```
 
 * Load the image using Pillow:
@@ -32,22 +31,22 @@ height = 480
 
 ### Depth image
 
-The color images are stored as 640x480 8-bit RGB images in PNG format.
+The color images are stored as 640x480 8-bit RGB images in PNG format. 
 
-The unit of the depth value is meter.
+The unit of the depth value is meter. 
 
 * Load the depth image:
 ```
 import numpy as np
-depth = np.load(FILENAME)
+img = cv2.imread(FILENAME)
 
 # change to disparity image
 disparity = 80.0 / depth
 ```
 
-### Segmentation image
+### Semantic segmentation image
 
-The segmentation images are saved as a uint8 numpy array. AirSim assigns value 0 to 255 to each mesh available in the environment. 
+The segmentation images are saved as a uint8 numpy array.
 
 [More details](https://github.com/microsoft/AirSim/blob/master/docs/image_apis.md#segmentation)
 
