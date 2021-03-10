@@ -41,7 +41,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 # ChangeSim: Towards End-to-End Online Scene Change Detection inIndustrial Indoor Environments
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/3zMMWg40WZY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/3zMMWg40WZY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Abstract
