@@ -88,3 +88,10 @@ The camera pose file is a text file containing the translation and orientation o
 import numpy as np
 flow = np.loadtxt(FILENAME)
 ```
+
+### trajectory file
+
+All poses mentioned above are merged into a trajectory.txt file for each sequence.
+
+### rtabmap.db file
+
