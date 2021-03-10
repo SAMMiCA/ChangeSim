@@ -79,3 +79,18 @@ Query_Sequence_
 .
 +-- Warehouse_N
 
+
+## Citation
+If you find this project helpful, please consider citing this project in your publications. The following is the BibTeX of our work.
+
+```bibtex
+@techreport{park2021changesim,
+author = {Park, Jin-Man and Jang, Jae-hyuk, and Yoo, Sahng-Min and Lee, Sun-Kyung and Kim, Ue-hwan and Kim, Jong-Hwan},
+title = {ChangeSim: Towards End-to-End Online Scene Change Detection in Industrial Indoor Environments},
+number = {arXiv:2103.05368 [cs.CV]},
+month = {March},
+year = {2021},
+institution = {ArXiV},
+url = {https://arxiv.org/abs/2103.05368},
+}
+```
