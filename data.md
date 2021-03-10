@@ -1,4 +1,4 @@
-### GRB Image
+### RGB Image
 
 The color images are stored as 640x480 8-bit RGB images in PNG format.
 
@@ -24,7 +24,7 @@ fy = 320.0  # focal length y
 cx = 320.0  # optical center x
 cy = 240.0  # optical center y
 
-fov = 90 deg # field of view
+fov = 90 deg # field of view    ??????????????
 
 width = 640
 height = 480
@@ -32,9 +32,9 @@ height = 480
 
 ### Depth image
 
-The depth maps are stored as 640x480 16-bit numpy array in NPY format. In the Unreal Engine, the environment usually has a sky sphere at a large distance. So the infinite distant object such as the sky has a large depth value (e.g. 10000) instead of an infinite number. 
+The color images are stored as 640x480 8-bit RGB images in PNG format.
 
-The unit of the depth value is meter. The baseline between the left and right cameras is 0.25m. 
+The unit of the depth value is meter.
 
 * Load the depth image:
 ```
