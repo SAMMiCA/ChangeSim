@@ -51,16 +51,20 @@ Query_Sequence_
 |       |      |
 |       |      +--- rgb                      # 0.png - xxxx.png      
 |       |      +--- depth                    # 0.png - xxxx.png
-|       |      +--- semantic_segmentation    # 0.png - xxxx.png     
-|       |      ---- raw                   
+|       |      +--- semantic_segmentation    # 0.png - xxxx.png
+|       |      +--- change_segmentation      # 0.png - xxxx.png
+|       |      +--- pose                     # 0.txt - xxxx.txt
+|       |      ---- t0                   
 |       |      |     |
 |       |      |     +--- rgb                # 0.png - xxxx.png
 |       |      |     +--- depth              # 0.png - xxxx.png
-|       |      |     ---- poses.g2o 
-|       |      |     ---- rtabmap.yaml
+|       |      |     +--- idx                # 0.txt - xxxx.txt
+|       |      ---- cloud_map.ply
+|       |      ---- trajectory.txt
 |       |
-|       +--- Seq_1
-|
+|       +--- Seq_0_dust
+|       .
+|       .
 +-- Warehouse_1
 .
 .
