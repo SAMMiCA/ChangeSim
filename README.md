@@ -20,33 +20,21 @@ The data is divided into train/test set and reference/query.
 ```
 ROOT
 |
---- ENV_NAME_0                             # environment folder
+--- Warehouse_0                              # Environment folder
 |       |
-|       ---- Easy                          # difficulty level
+|       ---- Seq_0                           # Sequece
 |       |      |
-|       |      ---- P000                   # trajectory folder
+|       |      ---- rgb                      # 0.png - xxxx.png      
+|       |      ---- depth                    # 0.png - xxxx.png
+|       |      ---- semantic_segmentation    # 0.png - xxxx.png     
+|       |      ---- raw                   
 |       |      |      |
-|       |      |      +--- depth_left      # 000000_left_depth.npy - 000xxx_left_depth.npy
-|       |      |      +--- depth_right     # 000000_right_depth.npy - 000xxx_right_depth.npy
-|       |      |      +--- flow            # 000000_000001_flow/mask.npy - 000xxx_000xxx_flow/mask.npy
-|       |      |      +--- image_left      # 000000_left.png - 000xxx_left.png 
-|       |      |      +--- image_right     # 000000_right.png - 000xxx_right.png 
-|       |      |      +--- seg_left        # 000000_left_seg.npy - 000xxx_left_seg.npy
-|       |      |      +--- seg_right       # 000000_right_seg.npy - 000xxx_right_seg.npy
-|       |      |      ---- pose_left.txt 
-|       |      |      ---- pose_right.txt
-|       |      |  
-|       |      +--- P001
-|       |      .
-|       |      .
-|       |      |
-|       |      +--- P00K
+|       |      |      ---- rgb      
+|       |      |      ---- depth        
+|       |      |      ---- poses.g2o 
+|       |      |      ---- rtabmap.yaml
 |       |
-|       +--- Hard
+|       +--- Seq_1
 |
-+-- ENV_NAME_1
-.
-.
-|
-+-- ENV_NAME_N
++-- Warehouse_1
 ```
