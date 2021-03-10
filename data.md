@@ -37,8 +37,8 @@ The unit of the depth value is meter.
 
 * Load the depth image:
 ```
-import numpy as np
-img = cv2.imread(FILENAME)
+import cv2
+depth = cv2.imread(FILENAME)
 ```
 
 ### Semantic segmentation image
@@ -47,8 +47,8 @@ The semantic segmentation images are stored as 640x480 8-bit RGB images in PNG f
 
 * Load the semantic segmentation image
 ```
-import numpy as np
-depth = np.load(FILENAME)
+import cv2
+semantic = cv2.imread(FILENAME)
 ```
 
 ### Change segmentation image
@@ -58,8 +58,8 @@ The semantic segmentation images are stored as 640x480 8-bit RGB images in PNG f
 
 * Load the change segmentation image
 ```
-import numpy as np
-depth = np.load(FILENAME)
+import cv2
+change = cv2.imread(FILENAME)
 ```
 
 ### Pose file
@@ -81,7 +81,7 @@ The camera pose file is a text file containing the translation and orientation o
 * Load the pose file:
 ```
 import numpy as np
-flow = np.loadtxt(FILENAME)
+pose = np.loadtxt(FILENAME)
 ```
 
 ### trajectory file
