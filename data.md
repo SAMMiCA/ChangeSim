@@ -41,7 +41,7 @@ import numpy as np
 img = cv2.imread(FILENAME)
 
 # change to disparity image
-disparity = 80.0 / depth
+disparity = 80.0 / depthy
 ```
 
 ### Semantic segmentation image
