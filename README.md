@@ -1,6 +1,7 @@
 # ChangeSim: Towards End-to-End Online Scene Change Detection in Industrial Indoor Environments
 
 [![report](https://img.shields.io/badge/arxiv-report-red)](https://arxiv.org/abs/2103.05368)
+[![page](https://img.shields.io/badge/page-changesim-blue)](https://sammica.github.io/ChangeSim)
 
 This repository provides ChangeSim dataset, codes and files for evaluation. Please refer to [paper](https://arxiv.org/abs/2103.05368) for more information about the dataset.
 
