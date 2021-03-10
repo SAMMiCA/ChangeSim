@@ -95,3 +95,8 @@ All poses mentioned above are merged into a trajectory.txt file for each sequenc
 
 ### rtabmap.db file
 
+All data from mapping stage. We can view using rtabmap database-viewer.
+
+### cloud_map.ply file
+
+3D reconstruction map from RTABMAP. We can view using 
