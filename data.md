@@ -39,16 +39,11 @@ The unit of the depth value is meter.
 ```
 import numpy as np
 img = cv2.imread(FILENAME)
-
-# change to disparity image
-disparity = 80.0 / depthy
 ```
 
 ### Semantic segmentation image
 
 The semantic segmentation images are stored as 640x480 8-bit RGB images in PNG format.
-
-[More details](https://github.com/microsoft/AirSim/blob/master/docs/image_apis.md#segmentation)
 
 * Load the semantic segmentation image
 ```
