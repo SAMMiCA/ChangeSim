@@ -10,7 +10,7 @@ The data is divided into train/test set and reference/query.
 
 [Reference_Sequence_Train](https://kaistackr-my.sharepoint.com/:u:/g/personal/jhyuk_kaist_ac_kr/Efxa73-liStOkSKpXVC4ARABY11jS0LP8O3HzhOdZ4fNNA?e=aYTREN)(52.8 GB)
 
-[Reference_Sequence_Test](https://kaistackr-my.sharepoint.com/:u:/g/personal/jhyuk_kaist_ac_kr/Ecy15_DweZ9EkNdKOFueMn0Bxsq7XkAYNtgHZ-klPZ9M3A?e=5OBH4y)(30.2 GB)
+[Reference_Sequence_Test](https://kaistackr-my.sharepoint.com/:u:/g/personal/jhyuk_kaist_ac_kr/EQy9p83-nvlMtY90aAnEItkBfJ7-1c3vpAe4dv5xsVlwKA?e=1OAD2l)(30.2 GB)
 
 [Query_Sequence_Train](https://kaistackr-my.sharepoint.com/:u:/g/personal/jhyuk_kaist_ac_kr/EW1W0h1RzEhBrTUn7zcx2vUBw-W0yQ2JZGB2rREdeICEjw?e=0KRm3J)(42.8 GB)
 
