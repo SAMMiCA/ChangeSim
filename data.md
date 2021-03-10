@@ -84,14 +84,14 @@ import numpy as np
 pose = np.loadtxt(FILENAME)
 ```
 
-### trajectory file
+### Trajectory file
 
 All poses mentioned above are merged into a trajectory.txt file for each sequence.
 
-### rtabmap.db file
+### Rtabmap.db file
 
 All data from the mapping stage. We can view using rtabmap-databaseViewer.
 
-### cloud_map.ply file
+### Cloud_map.ply file
 
 3D reconstruction map from RTABMAP.
