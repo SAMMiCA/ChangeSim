@@ -11,7 +11,7 @@ We present a challenging dataset, ChangeSim, aimed at online scene change detect
 
 If you use this dataset in your research, please cite this publication:
 ```
-@techreport{jmpark:changesim,
+@techreport{jmpark2021changesim,
 author = {Park, Jin-Man and Jang, Jae-hyuk, and Yoo, Sahng-Min and Lee, Sun-Kyung and Kim, Ue-hwan and Kim, Jong-Hwan},
 title = {ChangeSim: Towards End-to-End Online Scene Change Detection in Industrial Indoor Environments},
 number = {arXiv:2103.05368 [cs.CV]},
@@ -50,7 +50,10 @@ The dataset can be downloaded [here](https://github.com/SAMMiCA/ChangeSim) with 
 
 ## Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Jin-Man Park - (jmpark [at] rit [dot] kaist [dot] ac [dot] kr)
+
+Jae-Hyuk Jang - (jhjang [at] rit [dot] kaist [dot] ac [dot] kr)
+
 
 ## Acknowledgments
 
