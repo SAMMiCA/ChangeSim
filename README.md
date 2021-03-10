@@ -1,4 +1,4 @@
-# ChangeSim: Towards End-to-End Online Scene Change Detection inIndustrial Indoor Environments
+# ChangeSim: Towards End-to-End Online Scene Change Detection in Industrial Indoor Environments
 
 
 This repository provides ChangeSim dataset, codes and files for evaluation. Please refer to [paper](arxiv주소) for more information about the dataset.
