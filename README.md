@@ -4,6 +4,12 @@
 This repository provides ChangeSim dataset, codes and files for evaluation. Please refer to [paper](arxiv주소) for more information about the dataset.
 
 
+## Recent updates (Under construction)
+- [x] Dataset download links (March 10, 2021)
+- [ ] Documentation for the dataset 
+- [ ] A Tutorial for the visualization of ChangeSim 
+- [ ] A Tutorial for the data collection using Airsim and UE4)
+
 ## Dataset download
 
 The data is divided into train/test set and reference/query. 
