@@ -65,6 +65,8 @@ Query_Sequence_
 |       +--- Seq_0_dust
 |       .
 |       .
+|       +--- Seq_1_dark
+|
 +-- Warehouse_1
 .
 .
