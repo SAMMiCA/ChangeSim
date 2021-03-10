@@ -31,7 +31,7 @@ height = 480
 
 ### Depth image
 
-The color images are stored as 640x480 8-bit RGB images in PNG format. 
+The depth images are stored as 640x480 8-bit RGB images in PNG format. 
 
 The unit of the depth value is meter. 
 
@@ -46,11 +46,11 @@ disparity = 80.0 / depth
 
 ### Semantic segmentation image
 
-The segmentation images are saved as a uint8 numpy array.
+The semantic segmentation images are stored as 640x480 8-bit RGB images in PNG format.
 
 [More details](https://github.com/microsoft/AirSim/blob/master/docs/image_apis.md#segmentation)
 
-* Load the segmentation image
+* Load the semantic segmentation image
 ```
 import numpy as np
 depth = np.load(FILENAME)
@@ -58,10 +58,10 @@ depth = np.load(FILENAME)
 
 ### Change segmentation image
 
-The segmentation images are saved as a uint8 numpy array.
+The semantic segmentation images are stored as 640x480 8-bit RGB images in PNG format.
 
 
-* Load the segmentation image
+* Load the change segmentation image
 ```
 import numpy as np
 depth = np.load(FILENAME)
