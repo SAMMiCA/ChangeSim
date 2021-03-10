@@ -65,7 +65,7 @@ The semantic segmentation images are stored as 640x480 8-bit RGB images in PNG f
 ```
 import numpy as np
 depth = np.load(FILENAME)
-
+```
 
 ### Pose file
 
