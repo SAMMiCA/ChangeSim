@@ -8,7 +8,7 @@ This repository provides ChangeSim dataset, codes and files for evaluation. Plea
 
 The data is divided into train/test set and reference/query. 
 
-[Reference_Sequence_Train]()(00.0 GB)
+[Reference_Sequence_Train](https://kaistackr-my.sharepoint.com/:u:/g/personal/jhyuk_kaist_ac_kr/Efxa73-liStOkSKpXVC4ARABY11jS0LP8O3HzhOdZ4fNNA?e=aYTREN)(52.8 GB)
 
 [Reference_Sequence_Test](https://kaistackr-my.sharepoint.com/:u:/g/personal/jhyuk_kaist_ac_kr/Ecy15_DweZ9EkNdKOFueMn0Bxsq7XkAYNtgHZ-klPZ9M3A?e=5OBH4y)(30.2 GB)
 
@@ -29,8 +29,8 @@ ROOT
 |       |      +--- semantic_segmentation    # 0.png - xxxx.png     
 |       |      ---- raw                   
 |       |      |     |
-|       |      |     +--- rgb      
-|       |      |     +--- depth        
+|       |      |     +--- rgb                # 0.png - xxxx.png
+|       |      |     +--- depth              # 0.png - xxxx.png
 |       |      |     ---- poses.g2o 
 |       |      |     ---- rtabmap.yaml
 |       |
