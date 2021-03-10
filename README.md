@@ -18,7 +18,7 @@ The data is divided into train/test set and reference/query.
 
 ### Data directory structure
 ```
-ROOT
+Reference_Sequence_
 |
 --- Warehouse_0                              # Environment folder
 |       |
@@ -40,3 +40,29 @@ ROOT
 .
 .
 +-- Warehouse_N
+
+
+
+Query_Sequence_
+|
+--- Warehouse_0                              # Environment folder
+|       |
+|       ---- Seq_0                           # Sequece
+|       |      |
+|       |      +--- rgb                      # 0.png - xxxx.png      
+|       |      +--- depth                    # 0.png - xxxx.png
+|       |      +--- semantic_segmentation    # 0.png - xxxx.png     
+|       |      ---- raw                   
+|       |      |     |
+|       |      |     +--- rgb                # 0.png - xxxx.png
+|       |      |     +--- depth              # 0.png - xxxx.png
+|       |      |     ---- poses.g2o 
+|       |      |     ---- rtabmap.yaml
+|       |
+|       +--- Seq_1
+|
++-- Warehouse_1
+.
+.
++-- Warehouse_N
+
