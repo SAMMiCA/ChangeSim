@@ -1,44 +1,3 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/SAMMiCA/ChangeSim/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SAMMiCA/ChangeSim/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-
-
-
-
-
-
-
 # ChangeSim: Towards End-to-End Online Scene Change Detection inIndustrial Indoor Environments
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/3zMMWg40WZY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -51,6 +10,17 @@ We present a challenging dataset, ChangeSim, aimed at online scene change detect
 ## Citation
 
 If you use this dataset in your research, please cite this publication:
+```
+@techreport{jmpark:changesim,
+author = {Park, Jin-Man and Jang, Jae-hyuk, and Yoo, Sahng-Min and Lee, Sun-Kyung and Kim, Ue-hwan and Kim, Jong-Hwan},
+title = {ChangeSim: Towards End-to-End Online Scene Change Detection in Industrial Indoor Environments},
+number = {arXiv:2103.05368 [cs.CV]},
+month = {March},
+year = {2021},
+institution = {ArXiV},
+url = {https://arxiv.org/abs/2103.05368},
+}
+```
 
 ## Download
 
