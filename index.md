@@ -47,6 +47,8 @@ The dataset can be downloaded [here](https://github.com/SAMMiCA/ChangeSim) with 
  
 ### Rich Changes with Novel Multi-class Change Labels
 
+ ![here](fig/merged.png)
+
 ### Controllable Environmental Variations
 
 
