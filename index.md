@@ -51,6 +51,7 @@ The dataset can be downloaded [here](https://github.com/SAMMiCA/ChangeSim) with 
 
 ### Controllable Environmental Variations
 
+ ![here](fig/env_variation.png)
 
 
 
