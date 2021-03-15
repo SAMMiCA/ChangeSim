@@ -61,6 +61,7 @@ The dataset can be downloaded [here](https://github.com/SAMMiCA/ChangeSim) with 
 ## Data acquisition pipeline
 
 
+<img src="fig/method_fig.png" width="100%">
 
 
 
