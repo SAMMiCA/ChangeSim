@@ -39,7 +39,7 @@ The dataset can be downloaded [here](https://github.com/SAMMiCA/ChangeSim) with 
 
 ### Diverse and Realistic Indoor Industrial Domain
 
- [here](fig/env_overview_horisontal_ver.png)
+ ![here](fig/env_overview_horisontal_ver.png)
 
 ### Raw Data for the Whole Pipeline for Online Change Detection
 
