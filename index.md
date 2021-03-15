@@ -43,6 +43,8 @@ The dataset can be downloaded [here](https://github.com/SAMMiCA/ChangeSim) with 
 
 ### Raw Data for the Whole Pipeline for Online Change Detection
 
+ ![here](fig/raw_seq.png)
+ 
 ### Rich Changes with Novel Multi-class Change Labels
 
 ### Controllable Environmental Variations
