@@ -5,7 +5,7 @@
 
 <p align="center"><img src="./fig/github_main_gif.gif"></p>
 
-This repository provides ChangeSim dataset, codes and files for evaluation. Please refer to our [paper](https://arxiv.org/abs/2103.05368) (submitted to [IROS2021](https://www.iros2021.org/)) for more information about the dataset.
+This repository provides ChangeSim dataset, codes and files for evaluation. Please refer to our [paper](https://arxiv.org/abs/2103.05368) (accepted to [IROS2021](https://www.iros2021.org/)) for more information about the dataset.
 
 
 ## Recent updates (Under construction)
