@@ -28,7 +28,7 @@ The data is divided into train/test set and reference/query.
 
 ### Data directory structure
 ```
-Reference_Sequence_
+Ref_Seq_
 |
 --- Warehouse_0                              # Environment folder
 |       |
@@ -53,7 +53,7 @@ Reference_Sequence_
 
 
 
-Query_Sequence_
+Query_Seq_
 |
 --- Warehouse_0                              # Environment folder
 |       |
