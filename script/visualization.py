@@ -52,7 +52,8 @@ class ChangeSim(data.Dataset):
             --- utils
             |     |
             |     --- Object_Labeling.py
-
+            |     --- dict_indexing.py
+            |     --- idx2color.txt
 
         Args:
             crop_size (tuple): Image resize shape (H,W) (default: (320, 240))
