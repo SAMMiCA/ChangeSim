@@ -128,35 +128,35 @@ if __name__ == '__main__':
     batch_size = 4
     dst = ChangeSim(crop_size=(320, 240), num_classes=5, set='train')
     dataloader = data.DataLoader(dst, batch_size=batch_size, num_workers=2, shuffle=True)
-    for i, data in enumerate(dataloader):
-        imgs, depths, segmentation, labels, path = data
+    dataiter = iter(dataloader)
+    imgs, depths, segmentation, labels, path = next(dataiter)
 
-        [ref_rgb, query_rgb] = imgs
-        [ref_depth, query_depth] = depths
-        change_label = labels
-        query_segmentation = segmentation
+    [ref_rgb, query_rgb] = imgs
+    [ref_depth, query_depth] = depths
+    change_label = labels
+    query_segmentation = segmentation
 
+    # visualization
+    fig = plt.figure()
+    ax1 = fig.add_subplot(3, 2, 1)
+    ax2 = fig.add_subplot(3, 2, 2)
+    ax3 = fig.add_subplot(3, 2, 3)
+    ax4 = fig.add_subplot(3, 2, 4)
+    ax5 = fig.add_subplot(3, 2, 5)
+    ax6 = fig.add_subplot(3, 2, 6)
 
-        # visualization
-        fig = plt.figure()
-        ax1 = fig.add_subplot(3,2,1)
-        ax2 = fig.add_subplot(3,2,2)
-        ax3 = fig.add_subplot(3,2,3)
-        ax4 = fig.add_subplot(3,2,4)
-        ax5 = fig.add_subplot(3,2,5)
-        ax6 = fig.add_subplot(3,2,6)
+    ax1.imshow(torchvision.utils.make_grid(ref_rgb, normalize=False, nrow=batch_size).permute(1, 2, 0).numpy())
+    ax1.set_title('Reference RGB')
+    ax2.imshow(torchvision.utils.make_grid(query_rgb, normalize=False, nrow=batch_size).permute(1, 2, 0).numpy())
+    ax2.set_title('Query RGB')
+    ax3.imshow(torchvision.utils.make_grid(ref_depth, normalize=False, nrow=batch_size).permute(1, 2, 0).numpy())
+    ax3.set_title('Reference Depth')
+    ax4.imshow(torchvision.utils.make_grid(query_depth, normalize=False, nrow=batch_size).permute(1, 2, 0).numpy())
+    ax4.set_title('Query Depth')
+    ax5.imshow(torchvision.utils.make_grid(change_label, normalize=False, nrow=batch_size).permute(1, 2, 0).numpy())
+    ax5.set_title('Change Segmentation')
+    ax6.imshow(
+        torchvision.utils.make_grid(query_segmentation, normalize=False, nrow=batch_size).permute(1, 2, 0).numpy())
+    ax6.set_title('Query Semantic Segmentation')
 
-        ax1.imshow(torchvision.utils.make_grid(ref_rgb, normalize=False, nrow=batch_size).permute(1,2,0).numpy())
-        ax1.set_title('Reference RGB')
-        ax2.imshow(torchvision.utils.make_grid(query_rgb, normalize=False, nrow=batch_size).permute(1,2,0).numpy())
-        ax2.set_title('Query RGB')
-        ax3.imshow(torchvision.utils.make_grid(ref_depth, normalize=False, nrow=batch_size).permute(1,2,0).numpy())
-        ax3.set_title('Reference Depth')
-        ax4.imshow(torchvision.utils.make_grid(query_depth, normalize=False, nrow=batch_size).permute(1,2,0).numpy())
-        ax4.set_title('Query Depth')
-        ax5.imshow(torchvision.utils.make_grid(change_label, normalize=False, nrow=batch_size).permute(1,2,0).numpy())
-        ax5.set_title('Change Segmentation')
-        ax6.imshow(torchvision.utils.make_grid(query_segmentation, normalize=False, nrow=batch_size).permute(1,2,0).numpy())
-        ax6.set_title('Query Semantic Segmentation')
-
-        plt.show()
+    plt.show()
