@@ -57,7 +57,8 @@ class ChangeSim(data.Dataset):
 
         Args:
             crop_size (tuple): Image resize shape (H,W) (default: (320, 240))
-            num_classes (int): 5 for multi-class change detection
+            num_classes (int): Number of target change detection class
+                               5 for multi-class change detection
                                2 for binary change detection (default: 5)
             set (str): 'train' or 'test' (defalut: 'train')
         """
