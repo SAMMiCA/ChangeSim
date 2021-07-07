@@ -155,8 +155,7 @@ if __name__ == '__main__':
     ax4.set_title('Query Depth')
     ax5.imshow(torchvision.utils.make_grid(change_label, normalize=False, nrow=batch_size).permute(1, 2, 0).numpy())
     ax5.set_title('Change Segmentation')
-    ax6.imshow(
-        torchvision.utils.make_grid(query_segmentation, normalize=False, nrow=batch_size).permute(1, 2, 0).numpy())
+    ax6.imshow(torchvision.utils.make_grid(query_segmentation, normalize=False, nrow=batch_size).permute(1, 2, 0).numpy())
     ax6.set_title('Query Semantic Segmentation')
 
     plt.show()
