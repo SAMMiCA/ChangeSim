@@ -52,7 +52,7 @@ class ChangeSim(data.Dataset):
 
             script
             |
-            --- visualization.py
+            --- dataloader.py
             |
             --- utils
             |     |
