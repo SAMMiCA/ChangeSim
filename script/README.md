@@ -44,11 +44,15 @@ python visualization.py
 
 # Dataloader
 
+
+
 ```python
 import torch
 from dataloader import ChangeSim
 
-num_class = 5
+num_class = 5　＃　Number of target change detection class
+                  5 for multi-class change detection
+                  2 for binary change detection
 
 train_data = ChangeSim(crop_size=(320, 240), set='train', num_classes=num_class)
 train_loader = torch.utils.data.DataLoader(train_data, batch_size=6, shuffle=True)
