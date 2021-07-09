@@ -1,7 +1,7 @@
 
 # Data directory structure
 ```
-[Folder Name]
+  [Folder Name]
         |
         --- Mapping
                |
