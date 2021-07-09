@@ -32,7 +32,6 @@
             --- Object_Labeling.py
             --- dict_indexing.py
             --- idx2color.txt
-
 ```
 
 
