@@ -37,12 +37,12 @@ class ChangeSim(data.Dataset):
         self.image_total_files = []
         if set == 'train':
             for map in train_list:
-                self.image_total_files += glob.glob('../Localization/Query_Seq_Train/' + map + '/Seq_0/rgb/*.png')
-                self.image_total_files += glob.glob('../Localization/Query_Seq_Train/' + map + '/Seq_1/rgb/*.png')
+                self.image_total_files += glob.glob('../Query/Query_Seq_Train/' + map + '/Seq_0/rgb/*.png')
+                self.image_total_files += glob.glob('../Query/Query_Seq_Train/' + map + '/Seq_1/rgb/*.png')
         elif set == 'test':
             for map in test_list:
-                self.image_total_files += glob.glob('../Localization/Query_Seq_Test/' + map + '/Seq_0/rgb/*.png')
-                self.image_total_files += glob.glob('../Localization/Query_Seq_Test/' + map + '/Seq_1/rgb/*.png')
+                self.image_total_files += glob.glob('../Query/Query_Seq_Test/' + map + '/Seq_0/rgb/*.png')
+                self.image_total_files += glob.glob('../Query/Query_Seq_Test/' + map + '/Seq_1/rgb/*.png')
 
     def __len__(self):
         return len(self.image_total_files)
