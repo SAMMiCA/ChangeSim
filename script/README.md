@@ -1,8 +1,5 @@
 
 # Data directory structure
-
-Compose the folder in this way
-
 ```
 [Folder Name]
         |
@@ -14,30 +11,32 @@ Compose the folder in this way
             |        .         
             |        +--- Warehouse_5
             |
-            +-- Ref_Seq_Test
+            --- Ref_Seq_Test
             |        |
             |        +--- Warehouse_6
             |        .
             |        +--- Warehouse_9
+            
             Localization
             |
             +-- Query_Seq_Train
             +-- Query_Seq_Test
+            
             script
             |
             --- visualization.py
             --- dataloader.py
-            |
-            --- utils
-            |     |
-            |     --- Object_Labeling.py
-            |     --- dict_indexing.py
-            |     --- idx2color.txt
+            
+            utils
+            |     
+            --- Object_Labeling.py
+            --- dict_indexing.py
+            --- idx2color.txt
 
 ```
 
 
-# Visualiation
+# Visualization
 ```
 python visualization.py
 
