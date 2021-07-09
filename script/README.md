@@ -7,15 +7,15 @@
              |
              --- Ref_Seq_Train
              |        |
-             |        +--- Warehouse_0
+             |        +-- Warehouse_0
              |        .         
-             |        +--- Warehouse_5
+             |        +-- Warehouse_5
              |
              --- Ref_Seq_Test
              |        |
-             |        +--- Warehouse_6
+             |        +-- Warehouse_6
              |        .
-             |        +--- Warehouse_9
+             |        +-- Warehouse_9
             
           Query
              |
