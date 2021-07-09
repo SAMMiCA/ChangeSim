@@ -40,3 +40,17 @@
 python visualization.py
 ```
 <p align="center"><img src="../fig/visualization.png"></p>
+
+
+# Dataloader
+```
+import torch
+from dataloader import ChangeSim
+
+num_class = 5
+
+train_data = ChangeSim(crop_size=(320, 240), set='train', num_classes=num_class)
+train_loader = torch.utils.data.DataLoader(train_data, batch_size=6, shuffle=True)
+test_data = ChangeSim(crop_size=(320, 240), set='test', num_classes=num_class)
+test_loader = torch.utils.data.DataLoader(test_data, batch_size=6, shuffle=False)
+```
