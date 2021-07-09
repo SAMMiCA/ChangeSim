@@ -43,12 +43,12 @@ class ChangeSim(data.Dataset):
         self.image_total_files = []
         if set == 'train':
             for map in train_list:
-                self.image_total_files += glob.glob('../Localization/Query_Seq_Train/' + map + '/Seq_0/rgb/*.png')
-                self.image_total_files += glob.glob('../Localization/Query_Seq_Train/' + map + '/Seq_1/rgb/*.png')
+                self.image_total_files += glob.glob('../Query/Query_Seq_Train/' + map + '/Seq_0/rgb/*.png')
+                self.image_total_files += glob.glob('../Query/Query_Seq_Train/' + map + '/Seq_1/rgb/*.png')
         elif set == 'test':
             for map in test_list:
-                self.image_total_files += glob.glob('../Localization/Query_Seq_Test/' + map + '/Seq_0/rgb/*.png')
-                self.image_total_files += glob.glob('../Localization/Query_Seq_Test/' + map + '/Seq_1/rgb/*.png')
+                self.image_total_files += glob.glob('../Query/Query_Seq_Test/' + map + '/Seq_0/rgb/*.png')
+                self.image_total_files += glob.glob('../Query/Query_Seq_Test/' + map + '/Seq_1/rgb/*.png')
         # if not max_iters == None:
         #     self.image_total_files = self.image_total_files * int(np.ceil(float(max_iters) / len(self.image_total_files)))
         #     self.image_total_files = self.image_total_files[:max_iters]
@@ -78,7 +78,7 @@ class ChangeSim(data.Dataset):
                 ref_pose_find_path = test_rgb_path.replace(f'rgb/{file_idx}.png',f't0/idx/{file_idx}.txt')
                 f = open(ref_pose_find_path,'r',encoding='utf8')
                 ref_pose_idx = int(f.readlines()[0])
-                g2o_path = test_rgb_path.replace('/Localization/Query_Seq_Train','/Mapping/Ref_Seq_Train').replace(f'rgb/{file_idx}.png',f'raw/poses.g2o')
+                g2o_path = test_rgb_path.replace('/Query/Query_Seq_Train','/Reference/Ref_Seq_Train').replace(f'rgb/{file_idx}.png',f'raw/poses.g2o')
                 with open(g2o_path,'r',encoding = 'utf8') as f2:
                     while True:
                         line = f2.readline()
