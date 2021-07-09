@@ -81,7 +81,7 @@ class ChangeSim(data.Dataset):
         return len(self.image_total_files)
 
     def __getitem__(self, index):
-        # Get File Path
+        # Get File Paths
         test_rgb_path = self.image_total_files[index]
         test_depth_path = test_rgb_path.replace('rgb', 'depth')
         test_segmentation_path = test_rgb_path.replace('rgb', 'semantic_segmentation')
@@ -148,15 +148,63 @@ if __name__ == '__main__':
 
     ax1.imshow(torchvision.utils.make_grid(ref_rgb, normalize=False, nrow=batch_size).permute(1, 2, 0).numpy())
     ax1.set_title('Reference RGB')
+    ax1.axis('off')
     ax2.imshow(torchvision.utils.make_grid(query_rgb, normalize=False, nrow=batch_size).permute(1, 2, 0).numpy())
     ax2.set_title('Query RGB')
+    ax2.axis('off')
     ax3.imshow(torchvision.utils.make_grid(ref_depth, normalize=False, nrow=batch_size).permute(1, 2, 0).numpy())
     ax3.set_title('Reference Depth')
+    ax3.axis('off')
     ax4.imshow(torchvision.utils.make_grid(query_depth, normalize=False, nrow=batch_size).permute(1, 2, 0).numpy())
     ax4.set_title('Query Depth')
+    ax4.axis('off')
     ax5.imshow(torchvision.utils.make_grid(change_label, normalize=False, nrow=batch_size).permute(1, 2, 0).numpy())
     ax5.set_title('Change Segmentation')
+    ax5.axis('off')
     ax6.imshow(torchvision.utils.make_grid(query_segmentation, normalize=False, nrow=batch_size).permute(1, 2, 0).numpy())
     ax6.set_title('Query Semantic Segmentation')
+    ax6.axis('off')
 
     plt.show()
+
+
+
+    """
+    
+    
+    
+    
+    
+    for i, data in enumerate(dataloader):
+        imgs, depths, segmentation, labels, path = data
+
+        [ref_rgb, query_rgb] = imgs
+        [ref_depth, query_depth] = depths
+        change_label = labels
+        query_segmentation = segmentation
+
+
+        # visualization
+        fig = plt.figure()
+        ax1 = fig.add_subplot(3,2,1)
+        ax2 = fig.add_subplot(3,2,2)
+        ax3 = fig.add_subplot(3,2,3)
+        ax4 = fig.add_subplot(3,2,4)
+        ax5 = fig.add_subplot(3,2,5)
+        ax6 = fig.add_subplot(3,2,6)
+
+        ax1.imshow(torchvision.utils.make_grid(ref_rgb, normalize=False, nrow=batch_size).permute(1,2,0).numpy())
+        ax1.set_title('Reference RGB')
+        ax2.imshow(torchvision.utils.make_grid(query_rgb, normalize=False, nrow=batch_size).permute(1,2,0).numpy())
+        ax2.set_title('Query RGB')
+        ax3.imshow(torchvision.utils.make_grid(ref_depth, normalize=False, nrow=batch_size).permute(1,2,0).numpy())
+        ax3.set_title('Reference Depth')
+        ax4.imshow(torchvision.utils.make_grid(query_depth, normalize=False, nrow=batch_size).permute(1,2,0).numpy())
+        ax4.set_title('Query Depth')
+        ax5.imshow(torchvision.utils.make_grid(change_label, normalize=False, nrow=batch_size).permute(1,2,0).numpy())
+        ax5.set_title('Change Segmentation')
+        ax6.imshow(torchvision.utils.make_grid(query_segmentation, normalize=False, nrow=batch_size).permute(1,2,0).numpy())
+        ax6.set_title('Query Semantic Segmentation')
+
+        plt.show()
+    """
