@@ -3,7 +3,7 @@
 ```
 [Folder Name]
       |
-      --- Mapping
+      --- Reference
              |
              --- Ref_Seq_Train
              |        |
@@ -17,7 +17,7 @@
              |        .
              |        +--- Warehouse_9
             
-          Localization
+          Query
              |
              +-- Query_Seq_Train
              +-- Query_Seq_Test
