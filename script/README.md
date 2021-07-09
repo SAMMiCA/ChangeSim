@@ -50,6 +50,7 @@ python visualization.py
 import torch
 from dataloader import ChangeSim
 
+＃　Number of target change detection class
 num_class = 5
 
 train_data = ChangeSim(crop_size=(320, 240), set='train', num_classes=num_class)
