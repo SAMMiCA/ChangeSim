@@ -34,8 +34,11 @@ Compose the folder in this way
             |     --- dict_indexing.py
             |     --- idx2color.txt
 
+```
 
 
 # Visualiation
+```
 python visualization.py
 
+```
