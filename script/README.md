@@ -1,5 +1,5 @@
 
-### Data directory structure
+# Data directory structure
 
 Compose the folder in this way
 
@@ -33,3 +33,9 @@ Compose the folder in this way
             |     --- Object_Labeling.py
             |     --- dict_indexing.py
             |     --- idx2color.txt
+
+
+
+# Visualiation
+python visualization.py
+
