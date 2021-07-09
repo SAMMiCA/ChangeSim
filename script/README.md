@@ -39,6 +39,5 @@
 # Visualization
 ```
 python visualization.py
-
 ```
-<p align="center"><img src="./fig/visualization.png"></p>
+<p align="center"><img src="../fig/visualization.png"></p>
