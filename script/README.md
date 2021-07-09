@@ -11,7 +11,7 @@ Compose the folder in this way
             --- Ref_Seq_Train
             |        |
             |        +--- Warehouse_0
-            |        .         .
+            |        .         
             |        +--- Warehouse_5
             |
             +-- Ref_Seq_Test
