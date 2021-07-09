@@ -131,5 +131,6 @@ if __name__ == '__main__':
     ax6.imshow(torchvision.utils.make_grid(query_segmentation, normalize=False, nrow=batch_size).permute(1, 2, 0).numpy())
     ax6.set_title('Query Semantic Segmentation')
     ax6.axis('off')
-
+    
+    plt.tight_layout()
     plt.show()
