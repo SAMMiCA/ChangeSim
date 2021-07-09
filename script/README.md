@@ -1,7 +1,7 @@
 
 ### Data directory structure
 
-Compose the folder in this way:
+Compose the folder in this way
 
 ```
 [Folder Name]
