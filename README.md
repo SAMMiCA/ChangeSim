@@ -9,11 +9,11 @@
 This repository provides ChangeSim dataset, codes and files for evaluation. Please refer to our [paper](https://arxiv.org/abs/2103.05368) (accepted to [IROS2021](https://www.iros2021.org/)) for more information about the dataset.
 
 
-## Recent updates (Under construction)
-- [x] Dataset download links (March 10, 2021)
-- [ ] Documentation for the dataset 
-- [ ] A Tutorial for the visualization of ChangeSim 
-- [ ] A Tutorial for the data collection using Airsim and UE4
+## Recent updates 
+- [x] Dataset download links 
+- [x] Documentation for the dataset 
+- [x] A tutorial for the visualization of ChangeSim 
+- [x] A tutorial for the data collection using Airsim and UE4
 
 ## Dataset download
 
