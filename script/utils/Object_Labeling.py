@@ -65,11 +65,12 @@ class SegHelper:
 def ObjectLabeling(client,map_id,name2idx):
     found = client.simSetSegmentationObjectID("[\w]*", name2idx['background']['index'], True)
     print("set all object IDs to 0: %r" % (found))
-    #####
+
     found = client.simSetSegmentationObjectID("[\w]*column[\w]*", 1, True)
     found = client.simSetSegmentationObjectID("[\w]*pillar[\w]*", 1, True)
     found = client.simSetSegmentationObjectID("[\w]*pilar[\w]*", 1, True)
     found = client.simSetSegmentationObjectID("[\w]*Pilar[\w]*", 1, True)
+    found = client.simSetSegmentationObjectID("[\w]*Pillar[\w]*", 1, True)
 
     found = client.simSetSegmentationObjectID("[\w]*pipe[\w]*", 2, True)
     found = client.simSetSegmentationObjectID("[\w]*tube[\w]*", 2, True)
@@ -98,6 +99,7 @@ def ObjectLabeling(client,map_id,name2idx):
 
     found = client.simSetSegmentationObjectID("[\w]*fence[\w]*", 7, True)
     found = client.simSetSegmentationObjectID("[\w]*fencing[\w]*", 7, True)
+    found = client.simSetSegmentationObjectID("[\w]*Fence[\w]*", 7, True)
 
     found = client.simSetSegmentationObjectID("[\w]*wire[\w]*", 8, True)
     found = client.simSetSegmentationObjectID("[\w]*wire[\w]*cylinder[\w]*", 8, True)
@@ -106,6 +108,7 @@ def ObjectLabeling(client,map_id,name2idx):
 
     found = client.simSetSegmentationObjectID("[\w]*window[\w]*", 10, True)
     found = client.simSetSegmentationObjectID("[\w]*glass[\w]*panel[\w]*", 10, True)
+    found = client.simSetSegmentationObjectID("[\w]*Window[\w]*", 10, True)
 
     found = client.simSetSegmentationObjectID("[\w]*railing[\w]*", 11, True)
 
@@ -129,6 +132,7 @@ def ObjectLabeling(client,map_id,name2idx):
     #####
     found = client.simSetSegmentationObjectID("[\w]*light[\w]*", 17, True)
     found = client.simSetSegmentationObjectID("[\w]*lamp[\w]*", 17, True)
+    found = client.simSetSegmentationObjectID("[\w]*Lamp[\w]*", 17, True)
 
     found = client.simSetSegmentationObjectID("[\w]*trash[\w]*", 18, True)
     found = client.simSetSegmentationObjectID("[\w]*debris[\w]*", 18, True)
@@ -140,6 +144,7 @@ def ObjectLabeling(client,map_id,name2idx):
     found = client.simSetSegmentationObjectID("[\w]*rack[\w]*", 19, True)
     found = client.simSetSegmentationObjectID("[\w]*locker[\w]*", 19, True)
     found = client.simSetSegmentationObjectID("[\w]*cabinet[\w]*", 19, True)
+    found = client.simSetSegmentationObjectID("[\w]*Rack[\w]*", 19, True)
 
     found = client.simSetSegmentationObjectID("[\w]*door[\w]*", 20, True)
     found = client.simSetSegmentationObjectID("[\w]*gate[\w]*", 20, True)
@@ -149,15 +154,22 @@ def ObjectLabeling(client,map_id,name2idx):
     found = client.simSetSegmentationObjectID("[\w]*drum[\w]*", 21, True)
     found = client.simSetSegmentationObjectID("[\w]*tank[\w]*", 21, True)
     found = client.simSetSegmentationObjectID("[\w]*Barrel[\w]*", 21, True)
+    found = client.simSetSegmentationObjectID("[\w]*Barell[\w]*", 21, True)
+    found = client.simSetSegmentationObjectID("[\w]*Barell[\w]*", 21, True)
+    found = client.simSetSegmentationObjectID("[\w]*Barel[\w]*", 21, True)
 
     found = client.simSetSegmentationObjectID("[\w]*sign[\w]*", 22, True)
     found = client.simSetSegmentationObjectID("[\w]*sign[\w]*cver[\w]*", 22, True)
+    found = client.simSetSegmentationObjectID("[\w]*Exit*", 22, True)
+    found = client.simSetSegmentationObjectID("[\w]*exit*", 22, True)
 
     found = client.simSetSegmentationObjectID("[\w]*paperbox[\w]*", 23, True)
     found = client.simSetSegmentationObjectID("[\w]*box[\w]*", 23, True)
     found = client.simSetSegmentationObjectID("[\w]*bin[\w]*", 23, True)
     found = client.simSetSegmentationObjectID("[\w]*cube[\w]*", 23, True)
     found = client.simSetSegmentationObjectID("[\w]*crate[\w]*plastic[\w]*", 23, True)
+    found = client.simSetSegmentationObjectID("[\w]*CardBox[\w]*", 23, True)
+    found = client.simSetSegmentationObjectID("[\w]*Box[\w]*", 23, True)
 
     found = client.simSetSegmentationObjectID("[\w]*bag[\w]*", 24, True)
 
@@ -168,10 +180,13 @@ def ObjectLabeling(client,map_id,name2idx):
     found = client.simSetSegmentationObjectID("[\w]*electrical[\w]*box[\w]*", 25, True)
     found = client.simSetSegmentationObjectID("[\w]*control[\w]*panel[\w]*", 25, True)
     found = client.simSetSegmentationObjectID("[\w]*electric[\w]*panel[\w]*", 25, True)
+    found = client.simSetSegmentationObjectID("[\w]*ElectricBox[\w]*", 25, True)
+    found = client.simSetSegmentationObjectID("[\w]*FuseBox[\w]*", 25, True)
 
     found = client.simSetSegmentationObjectID("[\w]*transporter[\w]*", 26, True)
     found = client.simSetSegmentationObjectID("[\w]*truck[\w]*", 26, True)
     found = client.simSetSegmentationObjectID("[\w]*trailer[\w]*", 26, True)
+    client.simSetSegmentationObjectID("[\w]*forklift[\w]*", name2idx['vehicle']['index'], True)
 
     found = client.simSetSegmentationObjectID("[\w]*ladder[\w]*", 27, True)
     found = client.simSetSegmentationObjectID("[\w]*Ladder[\w]*", 27, True)
@@ -181,17 +196,22 @@ def ObjectLabeling(client,map_id,name2idx):
     found = client.simSetSegmentationObjectID("[\w]*bottle[\w]*", 28, True)
     found = client.simSetSegmentationObjectID("[\w]*cylinder[\w]*", 28, True)
     found = client.simSetSegmentationObjectID("[\w]*keg[\w]*", 28, True)
+    found = client.simSetSegmentationObjectID("[\w]*Bottle[\w]*", 28, True)
+    found = client.simSetSegmentationObjectID("[\w]*Bucket[\w]*", 28, True)
 
     found = client.simSetSegmentationObjectID("[\w]*extinguisher[\w]*", 29, True)
+    found = client.simSetSegmentationObjectID("[\w]*Extinguisher[\w]*", 29, True)
+    found = client.simSetSegmentationObjectID("[\w]*SM_fire_ex[\w]*", 29, True)
+    found = client.simSetSegmentationObjectID("[\w]*fire_ex[\w]*", 29, True)
 
-    # found = client.simSetSegmentationObjectID("[\w]*furniture[\w]*", 30, True)
-    # found = client.simSetSegmentationObjectID("[\w]*sofa[\w]*", 30, True)
-    # found = client.simSetSegmentationObjectID("[\w]*chair[\w]*", 30, True)
-    # found = client.simSetSegmentationObjectID("[\w]*table[\w]*", 30, True)
-
-    client.simSetSegmentationObjectID("[\w]*forklift[\w]*", name2idx['vehicle']['index'], True)
     client.simSetSegmentationObjectID("[\w]*pallet[\w]*", name2idx['pallet']['index'], True)
+    client.simSetSegmentationObjectID("[\w]*Pallete[\w]*", name2idx['pallet']['index'], True)
+    client.simSetSegmentationObjectID("[\w]*palette[\w]*", name2idx['pallet']['index'], True)
+
     client.simSetSegmentationObjectID("[\w]*pumptruck[\w]*", name2idx['hand_truck']['index'], True)
+    client.simSetSegmentationObjectID("[\w]*JackElectric[\w]*", name2idx['hand_truck']['index'], True)
+    client.simSetSegmentationObjectID("[\w]*jack[\w]*", name2idx['hand_truck']['index'], True)
+
 
 
     if map_id == 'Bunker':
@@ -259,7 +279,6 @@ def ObjectLabeling(client,map_id,name2idx):
         client.simSetSegmentationObjectID("pallet_205", name2idx['box']['index'], True)
 
         client.simSetSegmentationObjectID("SM_Keg[\w]*", name2idx['canister']['index'], True)
-
         client.simSetSegmentationObjectID("Wall_Half_Window[\w]*", name2idx['wall']['index'], True)
         client.simSetSegmentationObjectID("Filing_Cabinet[\w]*", name2idx['shelf']['index'], True)
         client.simSetSegmentationObjectID("Filing_Documents[\w]*", name2idx['box']['index'], True)
@@ -267,6 +286,306 @@ def ObjectLabeling(client,map_id,name2idx):
         client.simSetSegmentationObjectID("Floor_4", name2idx['stair']['index'], True)
         client.simSetSegmentationObjectID("Floor_5", name2idx['stair']['index'], True)
         client.simSetSegmentationObjectID("Floor_22", name2idx['stair']['index'], True)
+
+
+    elif map_id == 'Storage':
+        print('MAPNAME: {}'.format(map_id))
+
+        client.simSetSegmentationObjectID("PaintBucket[\w]*", name2idx['canister']['index'], True)
+        client.simSetSegmentationObjectID("Plankwood[\w]*", name2idx['beam']['index'], True)
+        client.simSetSegmentationObjectID("SM_Log[\w]*", name2idx['beam']['index'], True)
+        client.simSetSegmentationObjectID("SM_Plywood[\w]*", name2idx['beam']['index'], True)
+        client.simSetSegmentationObjectID("SM_Plywood04_11[\w]*", name2idx['beam']['index'], True)
+        client.simSetSegmentationObjectID("SM_Plankwood[\w]*", name2idx['beam']['index'], True)
+        client.simSetSegmentationObjectID("Plankwood[\w]*", name2idx['beam']['index'], True)
+        client.simSetSegmentationObjectID("Plywood[\w]*", name2idx['beam']['index'], True)
+
+        client.simSetSegmentationObjectID("Rack81", name2idx['fence']['index'], True)
+        client.simSetSegmentationObjectID("Rack80", name2idx['fence']['index'], True)
+        client.simSetSegmentationObjectID("Rack79", name2idx['fence']['index'], True)
+        client.simSetSegmentationObjectID("Rack78", name2idx['fence']['index'], True)
+        client.simSetSegmentationObjectID("Rack77", name2idx['fence']['index'], True)
+        client.simSetSegmentationObjectID("Rack76", name2idx['fence']['index'], True)
+        client.simSetSegmentationObjectID("Rack75", name2idx['fence']['index'], True)
+        client.simSetSegmentationObjectID("Rack74", name2idx['fence']['index'], True)
+        client.simSetSegmentationObjectID("Rack133", name2idx['fence']['index'], True)
+        client.simSetSegmentationObjectID("Rack132", name2idx['fence']['index'], True)
+        client.simSetSegmentationObjectID("Rack131", name2idx['fence']['index'], True)
+        client.simSetSegmentationObjectID("Rack130", name2idx['fence']['index'], True)
+
+
+        client.simSetSegmentationObjectID("StorageDecal99", name2idx['sign']['index'], True)
+        client.simSetSegmentationObjectID("StorageDecal94", name2idx['sign']['index'], True)
+        client.simSetSegmentationObjectID("StorageDecal89", name2idx['sign']['index'], True)
+        client.simSetSegmentationObjectID("StorageDecal84", name2idx['sign']['index'], True)
+        client.simSetSegmentationObjectID("StorageDecal04_67", name2idx['sign']['index'], True)
+        client.simSetSegmentationObjectID("StorageDecal18", name2idx['sign']['index'], True)
+        client.simSetSegmentationObjectID("StorageDecal20", name2idx['sign']['index'], True)
+
+
+        client.simSetSegmentationObjectID("Ramp11", name2idx['floor']['index'], True)
+        client.simSetSegmentationObjectID("Ramp12", name2idx['floor']['index'], True)
+        client.simSetSegmentationObjectID("Ramp15", name2idx['floor']['index'], True)
+        client.simSetSegmentationObjectID("Ramp16", name2idx['floor']['index'], True)
+        client.simSetSegmentationObjectID("Ramp23", name2idx['floor']['index'], True)
+        client.simSetSegmentationObjectID("Ramp24", name2idx['floor']['index'], True)
+        client.simSetSegmentationObjectID("Ramp21", name2idx['floor']['index'], True)
+        client.simSetSegmentationObjectID("Ramp20", name2idx['floor']['index'], True)
+        client.simSetSegmentationObjectID("Ramp19", name2idx['floor']['index'], True)
+
+    elif map_id == 'StorageHouse':
+
+        client.simSetSegmentationObjectID("[\w]*SM_Crate_PlasticNote[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*SM_Crate_Plastic[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*SM_CartonDrawer[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*SM_EmergencyBoardFull[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*FirstAidKit[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*Disifectant[\w]*", name2idx['canister']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*Flashlight[\w]*", name2idx['lamp']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*Paper_Shortcut[\w]*", name2idx['sign']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*PaperNote[\w]*", name2idx['sign']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*FloorDecal[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*FloorDecal_Letter[\w]*", name2idx['sign']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*PipeHolder[\w]*", name2idx['frame']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*Pushcart[\w]*", name2idx['hand_truck']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*Rackbeam[\w]*", name2idx['shelf']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*RackFrame[\w]*", name2idx['shelf']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*RackPile[\w]*", name2idx['beam']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*RackShelf[\w]*", name2idx['shelf']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*RackShield[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*WallPipe[\w]*", name2idx['pipe']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*WallSwitch[\w]*", name2idx['electric_box']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*WallWire[\w]*", name2idx['wire']['index'], True)
+        client.simSetSegmentationObjectID("SM_PaletteA[\w]*", name2idx['pallet']['index'], True)
+        client.simSetSegmentationObjectID("SM_Exit[\w]*", name2idx['sign']['index'], True)
+        client.simSetSegmentationObjectID("SM_WallA_Doorway[\w]*", name2idx['wall']['index'], True)
+        client.simSetSegmentationObjectID("SM_Book[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_BarelPlastic_A_04_280[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_BarelPlastic_A_1121[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_BarelPlastic_A_36[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_BarelPlastic_A_49[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_BarelPlastic_C_03_52[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_BarelPlastic_C_1127[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_BarelPlastic_C_26[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_BarelPlastic_D_03_58[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_BarelPlastic_D_03_58[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_BarelPlastic_D_94[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_BarelPlastic_D_97[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_BarelPlastic_D_100[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_BarelPlastic_D_7[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_BarelPlastic_D_8[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_BarelPlastic_D_1115[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_BarelPlastic_D_1131[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_BarelPlastic_D_105[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_BarelPlastic_D_39[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_BarelPlastic_D_40[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_FireExtinguisher_Part[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*FloorDecal_Arrow[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*Bucket[\w]*", name2idx['canister']['index'], True)
+        client.simSetSegmentationObjectID("SM_CannedFood[\w]*", name2idx['canister']['index'], True)
+
+    elif map_id == 'ModularWarehouse':
+        print('MAPNAME: {}'.format(map_id))
+
+        client.simSetSegmentationObjectID("Landscaped", name2idx['floor']['index'], True)
+        client.simSetSegmentationObjectID("Plane[\w]*", name2idx['floor']['index'], True)
+        client.simSetSegmentationObjectID("Sm_PalletJack[\w]*", name2idx['hand_truck']['index'], True)
+        client.simSetSegmentationObjectID("Sm_BollardPole[\w]*", name2idx['fence']['index'], True)
+
+
+        client.simSetSegmentationObjectID("SM_Warehouse_Wall01a50[\w]*", name2idx['ceiling']['index'], True)
+        client.simSetSegmentationObjectID("SM_Warehouse_Wall01a288[\w]*", name2idx['ceiling']['index'], True)
+        client.simSetSegmentationObjectID("SM_Warehouse_Wall01a52[\w]*", name2idx['ceiling']['index'], True)
+        client.simSetSegmentationObjectID("SM_Warehouse_Wall01a53[\w]*", name2idx['ceiling']['index'], True)
+        client.simSetSegmentationObjectID("SM_Warehouse_Wall01a289[\w]*", name2idx['ceiling']['index'], True)
+        client.simSetSegmentationObjectID("SM_Warehouse_Wall01a51[\w]*", name2idx['ceiling']['index'], True)
+
+        client.simSetSegmentationObjectID("[\w]*support[\w]*", name2idx['frame']['index'], True)
+
+
+        client.simSetSegmentationObjectID("SM_WoodPallet01a69[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a68[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_CardboardBox04a26[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a66[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a63[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a57[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a58[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a60[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a61[\w]*", name2idx['box']['index'], True)
+
+        client.simSetSegmentationObjectID("SM_WoodPallet01a25[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a26[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a16[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a17[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a23[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a22[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a19[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a20[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a32[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a31[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a34[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a35[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a28[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a29[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a13[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a14[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a37[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a38[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a51[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a52[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a54[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a55[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a39[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a40[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a42[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a43[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a48[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a49[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a45[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("SM_WoodPallet01a46[\w]*", name2idx['box']['index'], True)
+
+        client.simSetSegmentationObjectID("sm_woodpallet01aaa1_missing[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("sm_woodpallet01aaaa23_missing[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("sm_woodpallet01a5bb2235_missing[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("sm_woodpallet01a541244dds2_missing[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("sm_woodpallet01abc_553123_missing[\w]*", name2idx['box']['index'], True)
+
+        client.simSetSegmentationObjectID("SM_Door_RollUp01a7[\w]*", name2idx['wall']['index'], True)
+        client.simSetSegmentationObjectID("SM_Door_RollUp01a8[\w]*", name2idx['wall']['index'], True)
+        client.simSetSegmentationObjectID("SM_Door_RollUp01a9[\w]*", name2idx['wall']['index'], True)
+        client.simSetSegmentationObjectID("SM_Door_RollUp01a10[\w]*", name2idx['wall']['index'], True)
+        client.simSetSegmentationObjectID("SM_Door_RollUp01a11[\w]*", name2idx['wall']['index'], True)
+        client.simSetSegmentationObjectID("SM_Door_RollUp01a12[\w]*", name2idx['wall']['index'], True)
+
+
+        client.simSetSegmentationObjectID("SM_Liftruck[\w]*", name2idx['vehicle']['index'], True)
+        client.simSetSegmentationObjectID("pumptruck_01[\w]*", name2idx['hand_truck']['index'], True)
+        client.simSetSegmentationObjectID("pumptruck_02[\w]*", name2idx['hand_truck']['index'], True)
+        client.simSetSegmentationObjectID("tallsteps_01[\w]*", name2idx['ladder']['index'], True)
+
+        client.simSetSegmentationObjectID("sm_paintbucket[\w]*", name2idx['canister']['index'], True)
+        client.simSetSegmentationObjectID("truck_01[\w]*", name2idx['hand_truck']['index'], True)
+        client.simSetSegmentationObjectID("truck_01b[\w]*", name2idx['hand_truck']['index'], True)
+
+
+    elif map_id == 'ModularWarehouse_2':
+        print('MAPNAME: {}'.format(map_id))
+
+        client.simSetSegmentationObjectID("[\w]*rack[\w]*", name2idx['shelf']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*woodbox[\w]*", name2idx['pallet']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*floor[\w]*", name2idx['floor']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*corner[\w]*", name2idx['wall']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*warehouse_stairs[\w]*", name2idx['ladder']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*SM_IndustrialWarehouse_modular_Object29[\w]*", name2idx['wall']['index'], True)
+
+        client.simSetSegmentationObjectID("[\w]*SM_IndustrialWarehouse_modular_Object30[\w]*", name2idx['column']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*SM_IndustrialWarehouse_modular_Object31[\w]*", name2idx['column']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*SM_IndustrialWarehouse_modular_Object32[\w]*", name2idx['column']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*SM_IndustrialWarehouse_modular_Object33[\w]*", name2idx['column']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*SM_IndustrialWarehouse_modular_Object34[\w]*", name2idx['column']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*SM_IndustrialWarehouse_modular_Object35[\w]*", name2idx['column']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*SM_IndustrialWarehouse_modular_Object36[\w]*", name2idx['column']['index'], True)
+
+        client.simSetSegmentationObjectID("SM_barrels[\w]*", name2idx['canister']['index'], True)
+        client.simSetSegmentationObjectID("canister[\w]*", name2idx['barrel']['index'], True)
+        client.simSetSegmentationObjectID("sm_liftruck[\w]*", name2idx['vehicle']['index'], True)
+        client.simSetSegmentationObjectID("pumptruck[\w]*", name2idx['hand_truck']['index'], True)
+        client.simSetSegmentationObjectID("sm_palletjack[\w]*", name2idx['hand_truck']['index'], True)
+        client.simSetSegmentationObjectID("sm_drum[\w]*", name2idx['barrel']['index'], True)
+        client.simSetSegmentationObjectID("SM_Plywood04[\w]*", name2idx['beam']['index'], True)
+        client.simSetSegmentationObjectID("SM_PaintBucket[\w]*", name2idx['canister']['index'], True)
+
+        # client.simSetSegmentationObjectID("SM_barrels_250", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_231", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_230", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_742", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_249", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_248", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_247", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_9", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_245", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_246", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_736", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_732", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_726", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_729", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_226", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_723", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_221", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_220", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_718", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_213", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_140", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_141", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_80", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_79", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_78", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_77", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_69", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_130", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_71", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_72", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_76", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_131", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_74", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_73", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_68", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_67", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_66", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_65", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_57", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_107", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_59", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_60", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_111", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_110", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_109", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_108", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_56", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_55", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_54", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_53", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_70", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_2", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_75", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_4", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_82", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_51", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_50", name2idx['barrel']['index'], True)
+        # client.simSetSegmentationObjectID("SM_barrels_49", name2idx['barrel']['index'], True)
+
+
+        client.simSetSegmentationObjectID("SM_electric[\w]*", name2idx['electric_box']['index'], True)
+
+    elif map_id == 'Warehouse':
+        print('MAPNAME: {}'.format(map_id))
+
+        client.simSetSegmentationObjectID("[\w]*piller[\w]*", name2idx['column']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*AngledWood[\w]*", name2idx['wall']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*MidWallBricks[\w]*", name2idx['beam']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*Woodslice[\w]*", name2idx['beam']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*roofwall[\w]*", name2idx['wall']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*multistorage[\w]*", name2idx['shelf']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*barrelstorage[\w]*", name2idx['shelf']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*liquidcan[\w]*", name2idx['box']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*cablesroller[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*cablewood[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("SM_Lifter[\w]*", name2idx['vehicle']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*book[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*paper[\w]*", name2idx['background']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*metalstair[\w]*", name2idx['ladder']['index'], True)
+        client.simSetSegmentationObjectID("[\w]*pumptruck[\w]*", name2idx['hand_truck']['index'], True)
+
+        client.simSetSegmentationObjectID("[\w]*PaintBucket[\w]*", name2idx['canister']['index'], True)
+        client.simSetSegmentationObjectID("SM_Liftruck[\w]*", name2idx['vehicle']['index'], True)
+
+
+
+
+
+
+
+
 
     print("Labeling Done")
 
