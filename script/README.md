@@ -122,7 +122,8 @@ sudo apt install ros-noetic-rtabmap* ros-noetic-ros-numpy ros-noetic-perception-
        - Details -> Collision -> Collision Presets -> No collision
    - save
   
-### Data collection
+### Data collection 
+[Video1](https://youtu.be/8D17ImUBJ-M) [Video2](https://youtu.be/jL_nqfV0syA)
 1. Play map (alt+P)
 2. Run sensor publisher
    ```bash
@@ -157,6 +158,7 @@ sudo apt install ros-noetic-rtabmap* ros-noetic-ros-numpy ros-noetic-perception-
 
 ## Query Sequence
 ### Preparation
+[Video3](https://youtu.be/teKCd_fd_LY)
 1. make a copy of the map (now we call the original one as map_t0 and the coppied one map_t1, respectively) 
 2. Open map_t1 make changes
 
