@@ -87,7 +87,6 @@
    - We do not recommend setting a new UE4 project folder (that method sometimes causes a lot of errors). 
      Instead, it is recommended to use the already set Blocks folder.
      (See [here](https://microsoft.github.io/AirSim/unreal_custenv/) if you want to set up a new UE4 project folder.)
-   - Use unreal env. from [Electric-Tunnel-Dataset](https://github.com/SAMMiCA/Scenario1-ElectricTunnel-Dataset).
      ```
      # Duplicate Blocks Env as My_Env
      cp -r Airsim/Unreal/Environments/Blocks Airsim/Unreal/Environments/My_Env
