@@ -1,8 +1,6 @@
 # DIY Data Collection
 **change detection dataset collection implemented in Airsim + Unreal Engine + ROS environment.**
-
- The procedure is summarized in the below figure:
-![fig_main](fig/data_collection.png)
+![fig_main](../fig/data_collection.png)
 
 ## Environment Summary
 
