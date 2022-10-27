@@ -139,6 +139,18 @@ sudo cp backup/rgbd_slam_airsim_rviz_config.rviz /opt/ros/noetic/share/rtabmap_r
 
 # How-to 
 
+1. Open the downloaded env
+2. Make Trajectory in the env
+3. make a copy of the env (called env_to and env_t1, respectively) 
+4. make changes between them
+5. RUN env_t0 (alt+P)
+6. Run sensor publisher
+7. Run trajectory follower
+8. Run RTABMAP
+9. Start Mapping (press enter in the trajectory following script)
+10. End Mapping (ctrl+c whenever you want)
+11. 
+
 Youtube Link TBU.
 
 # Visualization
