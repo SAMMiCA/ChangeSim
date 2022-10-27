@@ -66,29 +66,7 @@
  **3. Install Airsim**
   - [official installation link](https://microsoft.github.io/AirSim/build_linux/#pre-build-setup) 
     ```
-    # Build Airsim
-    git submodule update --init --recursive
-    # Before the build, change external source code for fixing the computer vision mode velocity issue
-    cp backup/ManualPoseController.cpp external/AirSim/Unreal/Plugins/AirSim/Source/.
-    cd external/AirSim
-    ./setup.sh
-    ./build.sh
-    cd PythonClient
-    pip install .
-    cd ..
-    
-    # Install ROS with python prerequisites
-    sudo apt-get install ros-noetic-tf2-sensor-msgs ros-noetic-mavros*
-    sudo apt-get install python3-catkin-tools
-    sudo apt-get install ros-noetic-ros-numpy
-    # Build ROS packages
-    cd ros;
-    catkin_make
-    
-    # Running (just for the installation check)
-    source devel/setup.bash;
-    roslaunch airsim_ros_pkgs airsim_node.launch;
-    roslaunch airsim_ros_pkgs rviz.launch;
+    ./install_airsim.sh
     ```
   - Trouble-shooting:
     - gcc error:
