@@ -116,11 +116,9 @@
      # Duplicate Blocks Env as My_Env
      cp -r Airsim/Unreal/Environments/Blocks Airsim/Unreal/Environments/My_Env
      ```
-     Download MAP000X.zip from [Electric-Tunnel-Dataset](https://github.com/SAMMiCA/Scenario1-ElectricTunnel-Dataset) and unzip it.
+     BUY or Download a map from [UE4 Marketplace](https://www.unrealengine.com/marketplace/ko/store and unzip it.
      
      Then, from the unzipped source code, merge `Contents` folder into `Airsim/Unreal/My_Env/Contents`. 
-     
-   - (optional) Instead of using [Electric-Tunnel-Dataset](https://github.com/SAMMiCA/Scenario1-ElectricTunnel-Dataset), you can use UE4 maps from [UE4 Marketplace](https://www.unrealengine.com/marketplace/ko/store)(PURCHASE REQUIRED)
    
 
  
@@ -138,6 +136,10 @@ sudo cp backup/rgbd_slam_airsim_rviz_config.rviz /opt/ros/noetic/share/rtabmap_r
     
          install sip mannually following [here](https://wiki.debianusers.or.kr/index.php?title=PyQt_%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0#SIP_.EC.84.A4.EC.B9.98)
        
+
+# How-to 
+
+Youtube Link TBU.
 
 # Visualization
 ```
