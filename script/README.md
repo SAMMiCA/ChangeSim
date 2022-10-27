@@ -103,9 +103,6 @@
  **6. Install RTABMAP and other prerequisites**
 ```
 sudo apt install ros-noetic-rtabmap* ros-noetic-ros-numpy ros-noetic-perception-pcl python-rospy
-
-sudo cp backup/rgbd_slam_airsim_rviz_config.rviz /opt/ros/noetic/share/rtabmap_ros/launch/config/rgbd.rviz
-
 ```
      
    - Trouble-shooting:
@@ -116,18 +113,52 @@ sudo cp backup/rgbd_slam_airsim_rviz_config.rviz /opt/ros/noetic/share/rtabmap_r
        
 
 # How-to 
+## Reference Sequence
+### Preparation
+1. Open the downloaded map
+   - find Content folder in UE4Editor's content browser
+2. Make a trajectory in the map
+   - place assets (such as sphere) and name them waypoint_a_1, waypoint_a_2, etc.
+   - select all waypoints and make them invisible and no colision
+       - Details -> Rendering -> Visible -> unchecked
+       - Details -> Collision -> Collision Presets -> No collision
+### Data collection
+1. Play map (alt+P)
+2. Run sensor publisher
+   ```bash
+   # rgb, depth_registered, camera info, sem_seg are published
+   python publish_sensor_data.py 
+   ```
+3. Run trajectory follower
+   ```bash
+   python follow_trajectory_forward_multirotor.py 
+   # if successful, the multirotor will be hovering
+   ```
+5. Run RTABMAP
+    ```bash
+   roslaunch rgbd_mapping.launch 
+   ```
+7. Start moving 
+   - press enter in the trajectory following script
+9. End and save 
+   ```bash
+   # stop RTABMAP by pressing ctrl+c whenever you want   
+   # backup
+   cp ~/.ros/rtabmap.db SAVE_PATH
+   # extract images
+   rtabmap-databaseViewer ~/.ros/rtabmap.db
+   Yes-> File -> Extract Images -> OK
+   # save path should be like this
+   /media/jmpark/SSD1TB/changesim_dataset/Mapping/Bunker/Room_0/Seq_0/raw
+   # File -> Extract poses -> g2o -> OK -> Camera -> OK 
+   # save path should be like this
+   /media/jmpark/SSD1TB/changesim_dataset/Mapping/Bunker/Room_0/Seq_0/raw/poses.g2o
+   ```
 
-1. Open the downloaded env
-2. Make Trajectory in the env
-3. make a copy of the env (called env_to and env_t1, respectively) 
-4. make changes between them
-5. RUN env_t0 (alt+P)
-6. Run sensor publisher
-7. Run trajectory follower
-8. Run RTABMAP
-9. Start Mapping (press enter in the trajectory following script)
-10. End Mapping (ctrl+c whenever you want)
-11. 
+## Query Sequence
+### Preparation
+1. make a copy of the map (we call the original one as map_t0 and the coppied one map_t1, respectively) 
+2. Open map_t1
 
 Youtube Link TBU.
 
