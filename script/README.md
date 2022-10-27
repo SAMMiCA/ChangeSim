@@ -122,6 +122,8 @@ sudo apt install ros-noetic-rtabmap* ros-noetic-ros-numpy ros-noetic-perception-
    - select all waypoints and make them invisible and no colision
        - Details -> Rendering -> Visible -> unchecked
        - Details -> Collision -> Collision Presets -> No collision
+   - save
+  
 ### Data collection
 1. Play map (alt+P)
 2. Run sensor publisher
@@ -132,7 +134,7 @@ sudo apt install ros-noetic-rtabmap* ros-noetic-ros-numpy ros-noetic-perception-
 3. Run trajectory follower
    ```bash
    python follow_trajectory_forward_multirotor.py 
-   # if successful, the multirotor will be hovering
+   # if successful, the multirotor will be hovering; otherwise ctrl+c and run again.
    ```
 5. Run RTABMAP
     ```bash
@@ -157,8 +159,68 @@ sudo apt install ros-noetic-rtabmap* ros-noetic-ros-numpy ros-noetic-perception-
 
 ## Query Sequence
 ### Preparation
-1. make a copy of the map (we call the original one as map_t0 and the coppied one map_t1, respectively) 
-2. Open map_t1
+1. make a copy of the map (now we call the original one as map_t0 and the coppied one map_t1, respectively) 
+2. Open map_t1 make changes
+
+    **new**
+  
+    a. Place a new actor in any place
+    
+    b. Name the actor `blabla_new`
+    
+    **missing**
+  
+    a. Select an actor you want to make disappear
+    
+    b. Name the actor `blabla_missing`
+    
+    c. Uncheck both Rendering->Render in main path, Render in depth path
+    
+    **replaced**
+
+    a. Select an actor you want to make replaced
+
+    b. Remove the actor
+
+    c. Place a new actor to the same place, and name it as `blabla_replaced`
+
+    **rotated**
+
+    a. Select an actor you want to make rotated
+
+    b. Rotate the actor
+
+    c. Name the actor `blabla_rotated`
+
+
+3. Save the map (ctrl+s) and render lights only (ctrl+shift+;)
+
+### Data collection
+1. Play map (alt+P)
+2. Run sensor publisher
+   ```bash
+   # rgb, depth_registered, camera info, sem_seg are published
+   python publish_sensor_data.py --change_labeling --enable_dust
+   ```
+3. Run trajectory follower
+   ```bash
+   python follow_trajectory_forward_multirotor.py 
+   # if successful, the multirotor will be hovering; otherwise ctrl+c and run again.
+   ```
+5. Run RTABMAP
+    ```bash
+   roslaunch rgbd_localization.launch 
+   ```
+6. Start collection
+   ```bash
+   python cloud_to_img.py --save_path /media/jmpark/SSD1TB/changesim_dataset/Localization/Bunker/Room_0/Seq_0
+   ```
+8. Start moving 
+   - press enter in the trajectory following script
+
+9. End and save 
+   ```bash
+   # stop RTABMAP by pressing ctrl+c whenever you want   
 
 Youtube Link TBU.
 
