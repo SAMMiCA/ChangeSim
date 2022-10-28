@@ -48,7 +48,7 @@ parser.add_argument("--debug",
 parser.add_argument("--pitch_degree",
                     type=str,
                     help="pitch of multirotor pose in degree, (-45 or 0)",
-                    default='-45')
+                    default='0')
 parser.add_argument("--change_labeling",
                     action='store_true')
 parser.add_argument("--enable_dust",
